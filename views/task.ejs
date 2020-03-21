@@ -1,0 +1,19 @@
+<%-include('./partials/header.ejs')%>
+<body>
+    <center>
+        <h1><%=task.title%></h1>
+        <a class="button" href="/add">New Task</a>
+        <a class="button" href="/">View List</a>
+    </center>
+    <div class="container">
+        <h2>Description:</h2>
+        <p><%=task.desc%></p>
+        
+        <h2>Date Created:</h2>
+        <p><%=task.date%></p>
+        
+        <h2>Do by:</h2>
+        <p><%=task.dueDate%></p>
+    </div>
+</body>
+</html>
